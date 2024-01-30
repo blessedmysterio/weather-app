@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChyDGGQ6Iq2gt7XBHIyxRRODX7RhIGtyQ&callback=initMap" async defer></script>
+
+    
+    <script src="/map.js"></script>
+    
+    <title>WeatherApp Nadir Kuat</title>
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+    <div class="container mt-5 flex-grow-1">
+        <form action="/weather" method="get" class="text-center">
+            <div class="form-group">
+                <label for="city" class="h4">Enter the city name:</label>
+                <input type="text" id="city" name="city" required class="form-control">
+            </div>
+            <button type="submit" class="btn btn-secondary text-white">Get Current Weather</button>
+
+        </form>
+
+        
+        <div id="weather-info" class="mt-5">
+            
+        </div>
+        
+    <div id="map-container" style="height: 300px; margin: 20px;"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer style="background-color: #333; color: #fff; padding: 10px; text-align: center; margin-top: 45%;">
+        &copy; Nadir Kuat, IT-2207
+    </footer>
+</body>
+
+</html>
